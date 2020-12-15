@@ -14,11 +14,6 @@ Analyze trends in Texas crime data by utilizing CSV files on crime, popuation, a
 * Create different folders for each team Members
 * Team leader copy and paste graphs into powerpoint presentation
 
-Data Cleanup:
-- Cleanup life sentences
-- Max sentence data blanks
-- Cleanup parole eligibility
-
 Questions: 
 1. Which bin of crimes has the highest rate per population per county
     - Data frame of crime and county (count per category)(~10 categories)
