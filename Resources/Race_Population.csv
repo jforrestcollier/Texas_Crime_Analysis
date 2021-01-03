@@ -1,0 +1,61 @@
+County,Race,Population
+Harris,Total,4978845
+Harris,White,1448275
+Harris,Black,927092
+Harris,Hispanic,2107349
+Harris,Asian,387832
+Harris,Other,108297
+Dallas,Total,2734111
+Dallas,White,779189
+Dallas,Black,619686
+Dallas,Hispanic,1088629
+Dallas,Asian,189752
+Dallas,Other,56855
+Tarrant,Total,2143755
+Tarrant,White,980991
+Tarrant,Black,350847
+Tarrant,Hispanic,625143
+Tarrant,Asian,126675
+Tarrant,Other,60099
+Bexar,Total,2093502
+Bexar,White,563079
+Bexar,Black,153599
+Bexar,Hispanic,1267752
+Bexar,Asian,64039
+Bexar,Other,45033
+Travis,Total,1291502
+Travis,White,616018
+Travis,Black,106355
+Travis,Hispanic,449060
+Travis,Asian,85974
+Travis,Other,34095
+Collin,Total,1039369
+Collin,White,577887
+Collin,Black,106176
+Collin,Hispanic,166359
+Collin,Asian,155401
+Collin,Other,33546
+Denton,Total,897953
+Denton,White,509920
+Denton,Black,101318
+Denton,Hispanic,178191
+Denton,Asian,81830
+Denton,Other,26694
+El Paso,Total,876120
+El Paso,White,113960
+El Paso,Black,31669
+El Paso,Hispanic,704189
+El Paso,Asian,11758
+El Paso,Other,14544
+Hidalgo,Total,870366
+Hidalgo,White,53363
+Hidalgo,Black,3108
+Hidalgo,Hispanic,801189
+Hidalgo,Asian,10059
+Hidalgo,Other,2647
+Fort Bend,Total,840383
+Fort Bend,White,274177
+Fort Bend,Black,161167
+Fort Bend,Hispanic,207700
+Fort Bend,Asian,174343
+Fort Bend,Other,22996
