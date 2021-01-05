@@ -40,7 +40,7 @@ The information collected and presented provides a high-level look at some of th
 The original set of questions included evaluations on parole situations.  Based on reviewing the dataset from the State of Texas TDCJ, there were many inconsistencies in how the information was entered by State of Texas employees when populating the data fields.  The parole evaluation can be completed but would require additional research on each individual's case to identify case specifics.
 The original data sets used in the project and their source.
     - Texas County Population: https://demographics.texas.gov/data/TPEPP/Projections/
-    -Texas Department of Public Safety – Offense Codes: https://www.dps.texas.gov/administration/crime_records/pages/appndxKOffenseCodes.htm
+    - Texas Department of Public Safety – Offense Codes: https://www.dps.texas.gov/administration/crime_records/pages/appndxKOffenseCodes.htm
     - Texas Department of Criminal Justice Offender List: October 28, 2020 Update: https://www.dps.texas.gov/administration/crime_records/pages/appndxKOffenseCodes.htm
     - As a point of reference – there were 120,707 individuals listed in the State of Texas TDCJ system October 28, 2020 update. 
     - Texas County Seat Coordinates: https://data.texas.gov/dataset/Texas-Counties-Centroid-Map/ups3-9e8m
@@ -67,15 +67,12 @@ The above data cleanup steps created the basis data set for the analysis to answ
 
 # Part II – Data Visualization
 The following information describes the primary steps completed to create the visualizations.
-Q1)
+Q1) Bar charts identify which county/ race group combinations tend to commit one of the top five crimes. Income is then added to calculate a correlation and that income is overlayed on the stacked bar chart. 
 
-Q2)
-
-Q3)
+Q3) Appropriate Texas crime and population data imported and cleaned, identifying, and resolving “Not-A-Number” (NaN) cells with appropriate calculations or entries, renaming specific columns, identifying possible duplicates and erroneous entries and either replacing them or removing duplicates as appropriate, to generate clean “DataFrames” for analysis. Sliced and diced the dataset as needed to answer key questions.
 
 Q4) To identify outlier counties, setup steps were completed.  First, total offenses (offenders) per county were ratioed per 1,000 population.  Second, the counties were placed in various bins to create snapshots based on population.  The bins that best represented the data were counties with populations less than 10,000; counties with populations between 10,000 and 100,000; counties with populations between 100,000 and 500,000; and finally, counties with populations greater than 500,000.  The data was then grouped by offense and county.  
-After the data was g
-rouped by offense and county, different data sorts were completed to present data that could be used to visualize counties with the highest offense rates.  In the first data visualization, total counts of offenses were used.  In the remaining presentations, the offenses per county ratioed per 1,000 population was used to present a more representative impact on the respective counties. 
+After the data was grouped by offense and county, different data sorts were completed to present data that could be used to visualize counties with the highest offense rates.  In the first data visualization, total counts of offenses were used.  In the remaining presentations, the offenses per county ratioed per 1,000 population was used to present a more representative impact on the respective counties. 
 There were more than 40 different categories of offenses.  The top 5 offenses for individuals in the data set, on a total count basis, were used in the presentation to stay within the established time allotment.    The top 5 offense categories are Sexual Assault, Assault, Robbery, Murder and Drug related charges.
 Based on the final population bins identified, the counties with the highest offense ratios were listed by name in the visualizations.  In many cases, a single county’s offense ratio for more than 1 of the top 5 categories would be high enough that it would result in the county being listed more than once in the top 10 ratios.  In those cases, only the offense category with the highest offense ratio would be used for the presentation and the remaining listings for the same county would be dropped out of the list.   This was done to allow for a greater representation of counties versus presenting dominance of a few.   
 Heat maps were used to visualize the data.  
@@ -89,6 +86,9 @@ The last presentation is a heat map identifying the counties with populations gr
 
 # Conclusion
 - Question 1
+• 	Race groups cannot be generalized on the state level. A more granular look at communities would be more appropriate to analyze crime. 
+• 	Drugs have the highlest correlation with income and sexual assault the least
+• 	Income has a relatively low correlation with the number of offenses
 
 - Question 2 
 •	The top 5 highest-sentencing offenses in Texas are: Murder, Pollution, Kidnapping, Organized Crime, and Sexual Assault. The odd offense in the data is Pollution. Two of these individuals had multiple violations and were given high sentences (about 48 years average) for “unauthorized disposal” of toxic waste and materials, in violation of an environmental act. This resulted in a big increase in the average sentence years. Other examples in this offense category are pollution of waterways, underground tank violations (causing leakage into groundwater), and disposal on government property such as state parks. 
@@ -96,7 +96,11 @@ The last presentation is a heat map identifying the counties with populations gr
 •	Murder was the highest-sentencing crime in Texas. Murder sentences in five counties containing the major cities: Harris (Houston), Dallas (Dallas), Tarrant (Fort Worth), Bexar (San Antonio), and Travis (Austin) counties were evaluated. The average murder sentence in Texas is 56 years, and Harris, Dallas and Tarrant county are all above that state average at 58.8, 57.2 and 58.1, respectively. Bexar and Travis are below the state average at 49.8 and 54. When comparing the number of murder offenses for each county with the average sentence, Bexar county has a high number of offenses (1,272) and a lower-than-average sentence rate. Tarrant county only has 983 murder offenses but has an above average sentence rate at 58.1 years.
 
 - Question 3 
-
+•	The top 10 counties by prisoner population from database are: Harris, Dallas, Tarrant, Bexar, McLennan, Montgomery, Travis, Smith, El Paso, and Hidalgo counties.
+•	The top 10 offences by inmate counts are: Sexual Assault, Assault, Robbery, Drugs, Murder, Burglary, Alcohol Incidents, Evading Arrest, Weapon Related, and Theft.
+•	Prisoners under 20 years of age (precisely 15 to 19 years old) and up to 30 years old, were most in prison for robbery. For prisoners 31 to 40 years old, they are most 	in prison for drugs or drug related offences, but from ages 41 to 90 years of age, they are most in prison for sexual assault.
+•	Almost 95% of inmates in the Texas prison system are male, incarcerated mostly for robbery, sexual assault, and murder. Harris County has the most male inmates
+•	As a percentage of county population, McLennan county has over 4 percent of its population incarcerated mostly for sexual assault and drugs. Of these, those between 25 	to 44 years old make up over 2 percent by county population ratio. Smith county is close second with almost 4 percent of the county population, mostly in for drugs and 	assault. Of these, inmates between 25 to 44 years of age are about 1.8% of Smith County population for that age category.
 - Question 4
-•	The majority of the counties adjacent to metroplex locations and further out had drug related crimes as their primary offense.  The counties with the metroplex locations have crimes against a person as their primary offense.  
-•	Also noted, there is an interesting trend identified in the heat map that only presented Offense ratios per 1,000 and did not filter for population bin.  The majority (6 out of 10) of the counties listed in the table fall along or near either US 287 going from Fort Worth to Amarillo or US 281 going from San Antonio to Wichita Falls.  US 281 and US 287 meet in Wichita Falls.   Four of the counties are listed for Drug related charges and 2 are listed for Assault.  Kerr county is just northwest of San Antonio and if included in the count it would make 7 out if 10 counties from the table in the general location discussion.
+•	The majority of the counties adjacent to metroplex locations and further out had drug related crimes as their primary offense.  The counties with the metroplex locations 	have crimes against a person as their primary offense.  
+•	Also noted, there is an interesting trend identified in the heat map that only presented Offense ratios per 1,000 and did not filter for population bin.  The majority (6 	out of 10) of the counties listed in the table fall along or near either US 287 going from Fort Worth to Amarillo or US 281 going from San Antonio to Wichita Falls.  US 	281 and US 287 meet in Wichita Falls.   Four of the counties are listed for Drug related charges and 2 are listed for Assault.  Kerr county is just northwest of San 		Antonio and if included in the count it would make 7 out if 10 counties from the table in the general location discussion.
